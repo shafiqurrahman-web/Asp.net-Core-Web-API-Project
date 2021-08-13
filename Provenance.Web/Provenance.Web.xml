@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Provenance.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Provenance.Web.Controllers.CustomerController.ScanShopCode(System.Guid,System.Guid)">
+            <summary>
+            the start point of app is this api, first of all the customer scan the shop code to start a transaction
+            </summary>
+            <param name="id">userid</param>
+            <param name="providerId">providerid/shopid</param>
+            <returns></returns>
+        </member>
+        <member name="M:Provenance.Web.Controllers.ProductController.Post(Provenance.ServiceLayer.DTOs.Product.AddProductDTO)">
+            <summary>
+            add a new product
+            </summary>
+            <param name="inputData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Provenance.Web.Controllers.ProductController.Put(System.Guid,Provenance.ServiceLayer.DTOs.Product.UpdateProductDTO)">
+            <summary>
+            update an exist product
+            </summary>
+            <param name="id"></param>
+            <param name="inputData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Provenance.Web.Controllers.ProviderController.ScanProduct(System.Guid,System.Guid)">
+            <summary>
+            this api will add product to active transaction wich created before by customer for provider
+            </summary>
+            <param name="id">userid/provider holder id</param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Provenance.Web.Controllers.ProviderController.CompleteTheTransaction(System.Guid)">
+            <summary>
+            this api will complete the active transaction
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
