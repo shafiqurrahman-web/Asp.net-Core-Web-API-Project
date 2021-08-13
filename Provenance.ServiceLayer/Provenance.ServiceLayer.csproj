@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Provenance.Common\Provenance.Common.csproj" />
+    <ProjectReference Include="..\Provenance.DataLayer\Provenance.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>
